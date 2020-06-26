@@ -34,11 +34,27 @@ void loop() {
   Serial.println(t);
   Serial.print("Current humidity: ");
   Serial.println(h);
-  
   Serial.println("");
-
   delay(1000);
+
+  /*Code dieu khien dieu hoa*/
   
+  int NormalTemperature = 0;
+  int MediumTemperature = 0;
+  int HighTemperature   = 0;
+
+  int LowHumidity       = 0;
+  int MediumHumidity    = 0;
+  int HighHumidity      = 0;
   
+  if(t > MediumTemperature)
+  {
+      digitalWrite(fan, HIGH);
+      if(h > HighHumidity)
+      {
+          digitalWrite(airConditional, HIGH);   
+      }
+  }
+  /*\Code dieu khien dieu hoa*/
 
 }
