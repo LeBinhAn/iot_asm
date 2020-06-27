@@ -4,3 +4,30 @@ Day la huong dan cho anh em khi tham gia vao code
 nhanh moi truoc khi push len.
 2. Code cang clean cang tot.
 3. KHONG duoc sua code cua nguoi khac.
+*************************************************
+-Assignment_IoT
+	|-libraries
+	|-MainCode
+	|-ModuleTest
+	|-HuongDan.txt
+	|-README.md
+
+1. libraries.
+ - File nay chua cac libraries de chay chay cac cam bien, ong nao khong cho libraries vao cam bien khong chay duoc rang chiu.
+ - Moi library de o mot thu muc (folder) cho de quan ly.
+
+2. MainCode.
+ - File code chinh o folder nay.
+ - Anh chi em code theo cu phap sau:
+  /*<ten_module_cua_ban>*/
+  / //code o day
+  /
+  /*\<ten_module_cua_ban>*/
+
+3. Chua code mau de test cac module le.
+
+4. HuongDan.txt
+ - Huong dan su dung va update chuong trinh.
+
+5. README.md 
+ - File intro project.
