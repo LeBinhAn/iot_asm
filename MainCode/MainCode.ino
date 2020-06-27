@@ -17,10 +17,20 @@
 //Init dht reader
 DHT dht(DHTPIN, DHTTYPE);
 
+//bach khai bao
+int soundSensor=2;
+int LED=4;
+boolean LEDStatus=false;
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
   dht.begin();
+
+//bach
+pinMode(soundSensor,INPUT);
+pinMode(LED,OUTPUT);
+
 }
 
 void loop() {
@@ -56,5 +66,18 @@ void loop() {
       }
   }
   /*\Code dieu khien dieu hoa*/
+  
+  /*Code cam bien am thanh*/
+  int SensorData=digitalRead(soundSensor); 
+  if(SensorData==1){
 
+    if(LEDStatus==false){
+        LEDStatus=true;
+        digitalWrite(LED,HIGH);
+    }
+    else{
+        LEDStatus=false;
+        digitalWrite(LED,LOW);
+    }
+  /*\Code cam bien am thanh*/
 }
