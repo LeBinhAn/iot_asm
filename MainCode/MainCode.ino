@@ -56,5 +56,8 @@ void loop() {
       }
   }
   /*\Code dieu khien dieu hoa*/
-
+  
+  /*Code cam bien am thanh*/
+   
+  /*\Code cam bien am thanh*/
 }
